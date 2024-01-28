@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"cmsis_gpio\startup_stm32f103xb.o"
+"cmsis_gpio\main.o"
+"cmsis_gpio\stm32f1xx_it.o"
+"cmsis_gpio\stm32f1xx_hal_msp.o"
+"cmsis_gpio\stm32f1xx_hal_gpio_ex.o"
+"cmsis_gpio\stm32f1xx_hal_tim.o"
+"cmsis_gpio\stm32f1xx_hal_tim_ex.o"
+"cmsis_gpio\stm32f1xx_hal.o"
+"cmsis_gpio\stm32f1xx_hal_rcc.o"
+"cmsis_gpio\stm32f1xx_hal_rcc_ex.o"
+"cmsis_gpio\stm32f1xx_hal_gpio.o"
+"cmsis_gpio\stm32f1xx_hal_dma.o"
+"cmsis_gpio\stm32f1xx_hal_cortex.o"
+"cmsis_gpio\stm32f1xx_hal_pwr.o"
+"cmsis_gpio\stm32f1xx_hal_flash.o"
+"cmsis_gpio\stm32f1xx_hal_flash_ex.o"
+"cmsis_gpio\stm32f1xx_hal_exti.o"
+"cmsis_gpio\system_stm32f1xx.o"
+--strict --scatter "CMSIS_GPIO\CMSIS_GPIO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CMSIS_GPIO.map" -o CMSIS_GPIO\CMSIS_GPIO.axf

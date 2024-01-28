@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+"ll_gpio\startup_stm32f103xb.o"
+"ll_gpio\main.o"
+"ll_gpio\stm32f1xx_it.o"
+"ll_gpio\stm32f1xx_ll_gpio.o"
+"ll_gpio\stm32f1xx_ll_pwr.o"
+"ll_gpio\stm32f1xx_ll_exti.o"
+"ll_gpio\stm32f1xx_ll_rcc.o"
+"ll_gpio\stm32f1xx_ll_utils.o"
+"ll_gpio\system_stm32f1xx.o"
+--strict --scatter "LL_GPIO\LL_GPIO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LL_GPIO.map" -o LL_GPIO\LL_GPIO.axf
